@@ -14,16 +14,24 @@ if(num_args < 3):
     print("Result: the program will compress all the images contained in \"/folderInput\" and store the result in \"/FolderOutput\"\n QualityFactor is optional. It accpets values from 0 (worst) to 95 (best), if not specified, it will take the value ", quality_param)
     sys.exit(1)
 
-in_folder  = os.getcwd() + sys.argv[1]
-out_folder = os.getcwd() + sys.argv[2]
+in_folder  = sys.argv[1]
+out_folder = sys.argv[2]
 
 if (not os.path.isdir(in_folder) or not os.path.exists(in_folder)):
-    print("ERROR:\nFile: " + in_folder + "\ndoesn't exist or is not a directory")
-    sys.exit(1)       
+    print("WARNING: Directory: " + in_folder + " doesn't exist or is not a directory")
+    in_folder = os.getcwd() + in_folder
+    print("Using: " + in_folder)
+    if (not os.path.isdir(in_folder) or not os.path.exists(in_folder)):
+         print("ERROR: Directory: " + in_folder + " folder doesn't exist or is not a directory")
+         sys.exit(1)       
 if (not os.path.exists(out_folder)):
-    print("WARNING: \"" + out_folder + "\" doesn't exist. Creating folder...")
-    os.mkdir(out_folder)
-
+    print("WARNING: \"" + out_folder + "\" doesn't exist.")
+    if (not os.path.exists(os.getcwd() + out_folder)):
+        print("WARNING: \"" + os.getcwd() + out_folder + "\" doesn't exist. Creating folder...")      
+        os.mkdir(out_folder)
+        print("Created: " + out_folder)
+    print("Using: " + in_folder)
+    
 if(num_args == 4):
     try:
         new_quality_param = int(sys.argv[3])
