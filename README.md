@@ -26,7 +26,7 @@ Image Compressor is completely free to use, so you don't have to spend any money
 ### Usage
 `python3 imagecompressor.py "/input_folder" "/output_folder" [QualityFactor (0:95)]` 
 
-Note: Make sure to enclose the folder paths in double quotes ("path") and use forward slashes (\) for folder paths.
+Note: Make sure to enclose the folder paths in double quotes ("path") and use forward slashes (/) for folder paths.
 
 #### Parameters
 -   `input_folder`: The folder containing the images that need to be compressed.
