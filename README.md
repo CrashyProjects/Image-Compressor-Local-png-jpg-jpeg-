@@ -43,13 +43,13 @@ Suppose you have a folder named `/home/USER/ImageCompressor/test/input` that con
     python3 imagecompressor.py "/home/USER/ImageCompressor/test/input" "/home/USER/ImageCompressor/test/output" 30
      ```
   
-    or, if you are located in the `/home/USER/ImageCompressor/` directory:
+    Alternatively, if you are already located in the "/home/USER/ImageCompressor/" directory, you can run the following command (not recommended*):
 
     ```
     python3 imagecompressor.py "/test/input" "/test/output" 30
     ```
   
-    Note: If the **output folder** doesn't exist, it will be **created without the pwd**.
+    *Note: If the **output folder** doesn't exist, it will be **created without the pwd**.
 
 The script will compress all the images in the `/home/USER/ImageCompressor/test/input` folder and save the compressed images to the `/home/USER/ImageCompressor/test/output` folder, using a quality factor of 30. Once the compression is complete, a message will be displayed indicating that the process is complete.
 ## Graphical Interface (User Friendly)
