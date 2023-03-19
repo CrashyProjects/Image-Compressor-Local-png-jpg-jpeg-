@@ -55,10 +55,48 @@ The script will compress all the images in the `/home/USER/ImageCompressor/test/
 ## Graphical Interface (User Friendly)
 
 //TODO
-Download the zip, and extract it
-If you are on Windows, just click the direct access to execute
-If you are on Linux, run ./dist/ImageCompressor
+### Requirements
+-   Python 3.x
+-   PIL Library
 
+### Usage
+
+## Installation Guide
+## Windows
+Download and install the desired version of Python from the official website:https://www.python.org/downloads/
+
+Open a terminal and run the following command to install PIL:
+
+```
+pip install Pillow
+```
+Download the latest release executable of Image Compressor from 
+https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
+
+Double click on the "ImageCompressor.exe" executable file to run Image Compressor.
+
+
+## Linux (Debian and Ubuntu)
+Download and install the desired version of Python:
+
+```
+sudo apt-get update
+sudo apt-get install python3
+```
+
+Run the following command to install PIL:
+```
+pip install Pillow
+```
+
+Download the latest release executable of Image Compressor from 
+https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
+
+Run it with the following command:
+   ```
+    sudo ./ImageCompressor
+   ```
+   
 ## Build (Advanced User) [Not necessary]
 ### Requirements
 -   Python 3.x
