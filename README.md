@@ -41,7 +41,7 @@ Suppose you have a folder named `/home/USER/ImageCompressor/test/input` that con
 
     ```
     python3 imagecompressor.py "/home/USER/ImageCompressor/test/input" "/home/USER/ImageCompressor/test/output" 30
-     ```
+    ```
   
     Alternatively, if you are already located in the "/home/USER/ImageCompressor/" directory, you can run the following command (not recommended*):
 
@@ -51,6 +51,52 @@ Suppose you have a folder named `/home/USER/ImageCompressor/test/input` that con
   
     *Note: If the **output folder** doesn't exist, it will be **created without the pwd**.
 
-The script will compress all the images in the `/home/USER/ImageCompressor/test/input` folder and save the compressed images to the `/home/USER/ImageCompressor/test/output` folder, using a quality factor of 30. Once the compression is complete, a message will be displayed indicating that the process is complete.
+The script will compress all the images in the `/home/USER/ImageCompressor/test/input` folder and save the compressed images to the `/home/USER/ImageCompressor/test/output` folder, using a quality factor of 30. Once the compression is complete, a message will be displayed indicating that the process is completed.
 ## Graphical Interface (User Friendly)
+
 //TODO
+Download the zip, and extract it
+If you are on Windows, just click the direct access to execute
+If you are on Linux, run ./dist/ImageCompressor
+
+## Build (Advanced User) [Not necessary]
+### Requirements
+-   Python 3.x
+-   PIL Library
+-   Pyinstaller
+
+### How to build
+1. Open a terminal and navigate to the main folder of the project.
+2. Run the following command to create the build, dist, and .spec files:
+    ```
+    pyinstaller --onefile --name=ImageCompressor ./src/graphicinterface.py
+    ```
+3. Modify the "ImageCompressor.spec" file with the following contents (just replace a):
+    ```
+    a = Analysis(['./src/graphicinterface.py'],
+             pathex=['./src'],
+             binaries=[],
+             datas=[('./src/imagecompressor.py', '.')],
+             hiddenimports=[],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=None,
+             noarchive=False)
+    ```
+4.Run the following command to build the executable: 
+    ```
+    pyinstaller ImageCompressor.spec
+    ```
+
+5. To execute on Linux just do:
+    ```
+    sudo ./dist/ImageCompressor
+    ```
+    
+## Authors
+CrashyProjects
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
