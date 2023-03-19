@@ -23,13 +23,13 @@ Image Compressor is completely free to use, so you don't have to spend any money
 ### Installation Guide
 #### Windows
 Download the latest release executable of Image Compressor from 
-https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
+https://github.com/CrashyProjects/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0
 
 Double click on the "ImageCompressor.exe" executable file to run Image Compressor.
 
 #### Linux
 Download the latest release executable of Image Compressor from 
-https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
+https://github.com/CrashyProjects/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0
 
 Run it with the following command:
    ```
