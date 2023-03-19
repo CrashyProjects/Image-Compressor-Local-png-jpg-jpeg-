@@ -18,6 +18,37 @@ Image Compressor is completely free to use, so you don't have to spend any money
 
 # Operating modes
 
+## Graphical Interface (User Friendly)
+
+### Installation Guide
+#### Windows
+Download the latest release executable of Image Compressor from 
+https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
+
+Double click on the "ImageCompressor.exe" executable file to run Image Compressor.
+
+#### Linux
+Download the latest release executable of Image Compressor from 
+https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
+
+Run it with the following command:
+   ```
+    sudo ./ImageCompressor
+   ```
+
+### Usage
+To use the Image Compressor tool, follow these steps:
+1. Run "ImageCompressor.exe" to open the main menu:
+
+![Main menu](image_url)
+
+2. Click on the "Select Folder" button to choose the folder containing the images you want to compress. You can check the currently selected directory at the bottom of the latest dropdown menu:
+
+![Selected path](image_url)
+
+3. After selecting the folder, click on the "Compress" button to begin the compression process.
+4. Once the compression is complete, the tool will automatically close after 2 seconds.
+ 
 ## Console (Advanced User)
 ### Requirements
 -   Python 3.x
@@ -52,37 +83,7 @@ Suppose you have a folder named `/home/USER/ImageCompressor/test/input` that con
     *Note: If the **output folder** doesn't exist, it will be **created without the pwd**.
 
 The script will compress all the images in the `/home/USER/ImageCompressor/test/input` folder and save the compressed images to the `/home/USER/ImageCompressor/test/output` folder, using a quality factor of 30. Once the compression is complete, a message will be displayed indicating that the process is completed.
-## Graphical Interface (User Friendly)
 
-### Installation Guide
-#### Windows
-Download the latest release executable of Image Compressor from 
-https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
-
-Double click on the "ImageCompressor.exe" executable file to run Image Compressor.
-
-#### Linux
-Download the latest release executable of Image Compressor from 
-https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
-
-Run it with the following command:
-   ```
-    sudo ./ImageCompressor
-   ```
-
-### Usage
-To use the Image Compressor tool, follow these steps:
-1. Run "ImageCompressor.exe" to open the main menu:
-
-![Main menu](image_url)
-
-2. Click on the "Select Folder" button to choose the folder containing the images you want to compress. You can check the currently selected directory at the bottom of the latest dropdown menu:
-
-![Selected path](image_url)
-
-3. After selecting the folder, click on the "Compress" button to begin the compression process.
-4. Once the compression is complete, the tool will automatically close after 2 seconds.
-   
 ## Build (Advanced User) [Not necessary]
 ### Requirements
 -   Python 3.x
