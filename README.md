@@ -40,11 +40,11 @@ Run it with the following command:
 To use the Image Compressor tool, follow these steps:
 1. Run "ImageCompressor.exe" to open the main menu:
 
-![Main menu](image_url)
+   ![Main menu](/docs/menu.png)
 
 2. Click on the "Select Folder" button to choose the folder containing the images you want to compress. You can check the currently selected directory at the bottom of the latest dropdown menu:
 
-![Selected path](image_url)
+   ![Selected path](/docs/selected.png)
 
 3. After selecting the folder, click on the "Compress" button to begin the compression process.
 4. Once the compression is complete, the tool will automatically close after 2 seconds.
