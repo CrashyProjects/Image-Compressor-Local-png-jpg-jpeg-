@@ -1,7 +1,9 @@
 import os
+import sys
 import tkinter as tk
 import subprocess
 from tkinter import filedialog
+import time
 
 menu = tk.Tk()
 menu.title("Image Compressor")
@@ -76,12 +78,20 @@ print("Input folder:", input_folder)
 print("Output folder:", output_folder)
 print("Quality:", quality)
 
+exe_path = os.path.dirname(sys.executable)
+
 if(b_input and b_output and b_quality):
     print("#####Running Script#####")
     if(os.path.exists("imagecompressor.py")):
-        subprocess.call(["python3", "imagecompressor.py", input_folder, output_folder, quality])
-    elif(os.path.exists("imagecompressor.py")):
+        subprocess.call(["python3", "../imagecompressor.py", input_folder, output_folder, quality])
+    elif(os.path.exists("./src/imagecompressor.py")):
         subprocess.call(["python3", "./src/imagecompressor.py", input_folder, output_folder, quality])
+    else:
+        print("Conversion failed. Script unreachable. Current path: ", exe_path)
+
+        time.sleep(4)
 else:
     print("#####ABORTED#####")
+    
+time.sleep(2)
 print("Compression finished")

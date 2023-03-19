@@ -3,8 +3,7 @@
 
 block_cipher = None
 
-
-a = Analysis(['src/graphicinterface.py'],
+a = Analysis(['./src/graphicinterface.py'],
              pathex=[],
              binaries=[],
              datas=[],
