@@ -42,7 +42,7 @@ To use the Image Compressor tool, follow these steps:
 
    ![Main menu](/docs/menu.png)
 
-2. Click on the "Select Folder" button to choose the folder containing the images you want to compress. You can check the currently selected directory at the bottom of the latest dropdown menu:
+2. Click on the "Select Folder" button to choose the folder containing the images you want to compress. You can check the currently selected directory at the bottom of the window:
 
    ![Selected path](/docs/selected.png)
 
