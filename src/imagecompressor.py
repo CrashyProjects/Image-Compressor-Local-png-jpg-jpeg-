@@ -11,7 +11,7 @@ num_args = len(sys.argv)
 if(num_args < 3):
     print("Usage: python3 imagecompressor.py \"/folderInput\" \"/FolderOutput\" [QualityFactor (0:95)]")
     print("Warning: don't forget the \" and the / ")
-    print("Result: the program will compress all the images contained in \"/folderInput\" and store the result in \"/FolderOutput\"\n QualityFactor is optional. It accpets values from 0 (worst) to 95 (best), if not specified, it will take the value ", quality_param)
+    print("Result: the program will compress all the images contained in \"/folderInput\" and store the result in \"/FolderOutput\"\nQualityFactor is optional. It accpets values from 0 (worst) to 95 (best), if not specified, it will take the value ", quality_param)
     sys.exit(1)
 
 in_folder  = sys.argv[1]

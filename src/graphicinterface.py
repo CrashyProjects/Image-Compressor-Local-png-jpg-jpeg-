@@ -1,3 +1,4 @@
+import os
 import tkinter as tk
 import subprocess
 from tkinter import filedialog
@@ -57,6 +58,7 @@ button_input = tk.Button(menu, text="Choose folder", command=choose_input_folder
 button_output = tk.Button(menu, text="Choose folder", command=choose_output_folder)
 entry_quality = tk.Entry(menu)
 button_enter = tk.Button(menu, text="Compress", command=enter)
+entry_quality.insert(0, "5")
 
 #Pack widgets
 label_input.pack()
@@ -73,5 +75,13 @@ menu.mainloop()
 print("Input folder:", input_folder)
 print("Output folder:", output_folder)
 print("Quality:", quality)
-print("#####Running Script#####")
-subprocess.call(["python3", "imagecompressor.py", input_folder, output_folder, quality])
+
+if(b_input and b_output and b_quality):
+    print("#####Running Script#####")
+    if(os.path.exists("imagecompressor.py")):
+        subprocess.call(["python3", "imagecompressor.py", input_folder, output_folder, quality])
+    elif(os.path.exists("imagecompressor.py")):
+        subprocess.call(["python3", "./src/imagecompressor.py", input_folder, output_folder, quality])
+else:
+    print("#####ABORTED#####")
+print("Compression finished")
