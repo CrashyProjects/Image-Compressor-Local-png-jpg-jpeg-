@@ -1,16 +1,16 @@
 # Image Compressor
 Image Compressor is a versatile tool that can compress any type of image located within a specified folder. Here are some reasons why you should choose Image Compressor:
 # Why should I choose Image Compressor?
-##### Offline
+#### Offline
 This tool is available for use without an internet connection. We will never collect any data, meaning that your files are safe and secure. You can use this tool to compress private files without any worries!
 
-##### Limitless
+#### Limitless
 You can compress as many files as you need to, and there is no speed limit to the compression process! The speed of compression is entirely dependent on your computer's specifications.
 
-##### Multi-Extension
+#### Multi-Extension
 Don't worry about the file extension (jpg, jpeg, png, etc.). Image Compressor can compress any combination of formats without need for additional specifications!
 
-##### Easy to use and practical
+#### Easy to use and practical
 Simply specify the folder where your files are located and the folder where you want to save the compressed images. You don't have to select each file individually. Additionally, the program offers two support options: console and graphical, making it perfect for both programmers and everyday users.
 
 #### Free
