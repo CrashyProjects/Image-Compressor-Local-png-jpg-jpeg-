@@ -64,14 +64,34 @@ If you are on Linux, run ./dist/ImageCompressor
 -   Python 3.x
 -   PIL Library
 -   Pyinstaller
+### Before you build
+Note that there are pre-built versions available for Windows and Linux (tested on Debian) in the "Releases" section. If you prefer to build the application yourself, follow the steps below.
+### How to build [Option 1 - Using megerd.py] [Recommended]
+1. Open a terminal and navigate to the main folder of the project.
+2. Run the following command:
 
-### How to build
+    ```
+    pyinstaller --onefile --name=ImageCompressor ./src/megerd.py
+    ```
+3. To execute:
+- On Linux:
+
+    ```
+    sudo ./dist/ImageCompressor
+    ```
+- On windows:
+
+    Navigate to the "dist" folder and double-click on ImageCompressor.exe
+    
+### How to build [Option 2 - Using graphicinterface.py and imagecompressor.py]
 1. Open a terminal and navigate to the main folder of the project.
 2. Run the following command to create the build, dist, and .spec files:
+
     ```
     pyinstaller --onefile --name=ImageCompressor ./src/graphicinterface.py
     ```
 3. Modify the "ImageCompressor.spec" file with the following contents (just replace a):
+
     ```
     a = Analysis(['./src/graphicinterface.py'],
              pathex=['./src'],
@@ -94,6 +114,7 @@ If you are on Linux, run ./dist/ImageCompressor
     ```
 
 5. To execute on Linux just do:
+
     ```
     sudo ./dist/ImageCompressor
     ```
