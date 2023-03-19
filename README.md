@@ -86,12 +86,9 @@ If you are on Linux, run ./dist/ImageCompressor
              cipher=None,
              noarchive=False)
     ```
-<<<<<<< HEAD
+
 4. Run the following command to build the executable: 
 
-=======
-4.Run the following command to build the executable: 
->>>>>>> 6f83f83875753274ea798ad7542e4bbe54207920
     ```
     pyinstaller ImageCompressor.spec
     ```
