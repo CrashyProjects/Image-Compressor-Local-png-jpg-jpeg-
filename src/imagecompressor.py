@@ -52,7 +52,10 @@ inFiles = os.listdir(in_folder)
 for img in inFiles:
     in_path_img = in_folder   + "/" + img
     out_path_img = out_folder + "/" + img
-    img = Image.open(in_path_img)
-    img.save(out_path_img, optimize=True, quality=quality_param)
+    try:
+        img = Image.open(in_path_img)
+        img.save(out_path_img, optimize=True, quality=quality_param)
+    except Exception as e:
+             print("An exception occurred: {}".format(e))
 
 print("Compression completed")
