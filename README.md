@@ -54,41 +54,14 @@ Suppose you have a folder named `/home/USER/ImageCompressor/test/input` that con
 The script will compress all the images in the `/home/USER/ImageCompressor/test/input` folder and save the compressed images to the `/home/USER/ImageCompressor/test/output` folder, using a quality factor of 30. Once the compression is complete, a message will be displayed indicating that the process is completed.
 ## Graphical Interface (User Friendly)
 
-//TODO
-### Requirements
--   Python 3.x
--   PIL Library
-
-### Usage
-
-## Installation Guide
-## Windows
-Download and install the desired version of Python from the official website:https://www.python.org/downloads/
-
-Open a terminal and run the following command to install PIL:
-
-```
-pip install Pillow
-```
+### Installation Guide
+#### Windows
 Download the latest release executable of Image Compressor from 
 https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
 
 Double click on the "ImageCompressor.exe" executable file to run Image Compressor.
 
-
-## Linux (Debian and Ubuntu)
-Download and install the desired version of Python:
-
-```
-sudo apt-get update
-sudo apt-get install python3
-```
-
-Run the following command to install PIL:
-```
-pip install Pillow
-```
-
+#### Linux
 Download the latest release executable of Image Compressor from 
 https://github.com/github/ImageCompressor-AnyFileExtension-Console-GraphicInterface/releases/tag/v1.0. 
 
@@ -96,6 +69,19 @@ Run it with the following command:
    ```
     sudo ./ImageCompressor
    ```
+
+### Usage
+To use the Image Compressor tool, follow these steps:
+1. Run "ImageCompressor.exe" to open the main menu:
+
+![Main menu](image_url)
+
+2. Click on the "Select Folder" button to choose the folder containing the images you want to compress. You can check the currently selected directory at the bottom of the latest dropdown menu:
+
+![Selected path](image_url)
+
+3. After selecting the folder, click on the "Compress" button to begin the compression process.
+4. Once the compression is complete, the tool will automatically close after 2 seconds.
    
 ## Build (Advanced User) [Not necessary]
 ### Requirements
@@ -107,7 +93,7 @@ Note that there are pre-built versions available for Windows and Linux (tested o
 ### How to build [Option 1 - Using megerd.py] [Recommended]
 1. Open a terminal and navigate to the main folder of the project.
 2. Run the following command:
-
+3. Once the compression is complete, the tool will automatically close after 2 seconds.
     ```
     pyinstaller --onefile --name=ImageCompressor ./src/megerd.py
     ```
@@ -156,7 +142,13 @@ Note that there are pre-built versions available for Windows and Linux (tested o
     ```
     sudo ./dist/ImageCompressor
     ```
-    
+## FAQ
+- Does this program copy empty (0 bit) images?
+
+  No, empty images are not copied.
+- What image formats are supported by ImageCompressor?
+
+  ImageCompressor supports the same image formats as the Pillow library, which includes popular formats such as JPEG, PNG, BMP, GIF, and TIFF, among others.
 ## Authors
 CrashyProjects
 ## License
