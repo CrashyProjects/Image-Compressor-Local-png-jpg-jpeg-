@@ -3,3 +3,4 @@ ImageCompressor.spec
 /build
 /dist
 /tmp
+/src/__pycache__
