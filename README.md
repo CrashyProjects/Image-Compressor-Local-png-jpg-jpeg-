@@ -150,7 +150,6 @@ Note that there are pre-built versions available for Windows and Linux (tested o
 - What image formats are supported by ImageCompressor?
 
   ImageCompressor supports the same image formats as the Pillow library, which includes popular formats such as JPEG, PNG, BMP, GIF, and TIFF, among others.
-## Authors
-CrashyProjects
+
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
